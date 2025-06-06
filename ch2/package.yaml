@@ -47,6 +47,56 @@ executables:
     dependencies:
     - ch2
 
+  first-exe:
+    main:                first.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch2
+
+  2_3-exe:
+    main:                2_3.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch2
+  
+  2_4-exe:
+    main:                2_4.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch2
+
+  2_5-exe:
+    main:                2_5.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch2
+
+  2_6-exe:
+    main:                2_6.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch2
+
 tests:
   ch2-test:
     main:                Spec.hs

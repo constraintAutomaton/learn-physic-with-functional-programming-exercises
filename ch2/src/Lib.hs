@@ -1,6 +1,17 @@
 module Lib
-    ( someFunc
-    ) where
+  ( g,
+    v,
+    printTest
+  )
+where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+g :: Double
+g = 9.81
+
+v :: Double
+v = 30
+
+
+printTest :: String -> Bool -> IO ()
+printTest name passed =
+  putStrLn $ name ++ ": " ++ if passed then "PASSED" else "FAILED"
